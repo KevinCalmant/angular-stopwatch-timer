@@ -1,0 +1,32 @@
+svg {
+  fill: rgb(136, 211, 125);
+}
+
+.stopwatch {
+  width: 250px;
+  height: 250px;
+  border-radius: 90%;
+  border: 20px solid #04b0bb;
+  display: inline-block;
+}
+
+.stopwatch-button {
+  width: 80px;
+  height: 20px;
+  background-color: #04b0bb;
+  margin-left: 105px;
+  margin-bottom: -15px;
+}
+
+.stopwatch-stop {
+  transform: translate(250px, 60px) rotateX(25deg) rotateZ(50deg);
+  width: 25px;
+  height: 30px;
+  background-color: #04b0bb;
+}
+
+.timer {
+  color: #04b0bb;
+  font-weight: bold;
+  font-size: 20px;
+}

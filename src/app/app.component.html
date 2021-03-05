@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <div class="stopwatch-button"></div>
+  <div class="stopwatch-stop"></div>
+  <div class="stopwatch">
+    <div *ngIf="counter !== 0; else fullcircle">
+      <svg width="250" height="250" viewbox="0 0 250 250">
+        <path
+          id="loader"
+          transform="translate(125, 125)"
+          [attr.d]="animAttribute"
+        />
+      </svg>
+    </div>
+    <ng-template #fullcircle>
+      <svg width="250" height="250" viewbox="0 0 250 250">
+        <circle cx="125" cy="125" r="125" />
+      </svg>
+    </ng-template>
+  </div>
+  <div class="timer">
+    <p *ngIf="counter > 59; else seconds">
+      {{ counter * 1000 | date:'mm:ss' }}
+    </p>
+    <ng-template #seconds>
+      {{ counter * 1000 | date:'ss' }} sec
+    </ng-template>
+  </div>
+</div>
