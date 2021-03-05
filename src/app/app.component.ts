@@ -29,10 +29,10 @@ export class AppComponent {
     this._a++;
     this._a %= 360;
     const r = (this._a * Math.PI) / (this.maxTime / 2);
-    const x = Math.sin(r) * 125;
-    const y = Math.cos(r) * -125;
+    const x = Math.sin(r) * 25;
+    const y = Math.cos(r) * -25;
     const mid = this._a > this.maxTime / 2 ? 1 : 0;
     this.animAttribute =
-      "M 0 0 v -125 A 125 125 1 " + mid + " 1 " + x + " " + y + " z";
+      "M 0 0 v -25 A 25 25 1 " + mid + " 1 " + x + " " + y + " z";
   }
 }
