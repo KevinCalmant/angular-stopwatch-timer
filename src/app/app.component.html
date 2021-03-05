@@ -23,7 +23,9 @@
       {{ counter * 1000 | date:'mm:ss' }}
     </p>
     <ng-template #seconds>
-      {{ counter * 1000 | date:'ss' }} sec
+      <p>
+        {{ counter * 1000 | date:'ss' }} sec
+      </p>
     </ng-template>
   </div>
 </div>
